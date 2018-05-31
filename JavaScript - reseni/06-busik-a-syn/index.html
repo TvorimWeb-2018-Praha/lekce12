@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Busík a Syn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i|Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div class="hlavicka">
+        <div class="hlavicka-obsah">
+            <div class="titulek">
+                <h1>Busík a Syn</h1>
+                <p>Dopravní Společnost</p>
+            </div>
+        </div>
+    </div>
+    <div class="obsah">
+        <h2>Rezervační systém - linka Praha &#8594 Víděn, 4.6.2018 14:00</h2>
+        <table id="pasazeri">
+            <tr>
+                <th>Jméno</th>
+                <th>Příjmení</th>
+                <th>Věk</th>
+                <th>Sleva</th>
+                <th>Cena</th>
+            </tr>
+        </table>
+        <a href="#" class="tlacitko" id="pridatPasazera">Přidat pasažéra</a>
+
+        <div class="rezervace-akce">
+            <a href="#" class="tlacitko okTlac">Do košíku</a>
+            <a href="#" class="tlacitko">Zrušit</a>
+        </div>
+    </div>
+    <div class="paticka">
+        &copy;2018 Busík a Syn, s.r.o.
+    </div>
+
+
+    <div id="formular">
+        <div class="formular-hlavicka">
+            <h2>Nový pasažér</h2>
+        </div>
+        <form action="#" class="formular-obsah" id="formular-pole">
+            <table>
+                <tr>
+                    <td>
+                        <label for="jmeno">Jméno:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="jmeno" id="jmeno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prijmeni">Příjmení:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="prijmeni" id="prijmeni">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="vek">Věk:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="vek" id="vek">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sleva">Sleva:</label>
+                    </td>
+                    <td>
+                        <select name="sleva" id="sleva">
+                            <option value="">-----</option>
+                            <option value="student">Student</option>
+                            <option value="duchodce">Důchodce</option>
+                            <option value="ztp">ZTP</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div class="tlacitka">
+                <a href="#" class="tlacitko" id="cancelTlac">Zrušit</a>
+                <a href="#" class="tlacitko okTlac" id="okTlac">Přidat</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

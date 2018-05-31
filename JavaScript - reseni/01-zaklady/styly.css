@@ -1,0 +1,16 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+	padding: 20px;
+	font: 16px/1.5 sans-serif ;
+	background-color: #e5e5e5;
+}
+
+pre {
+	padding: 1em;
+	font: 18px/1.5 monospace;
+	border: 1px solid #d5d5d5;
+	background-color: white;
+}

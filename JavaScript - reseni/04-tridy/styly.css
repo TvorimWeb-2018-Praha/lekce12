@@ -1,0 +1,30 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+	padding: 20px;
+	font: 16px/1.5 sans-serif ;
+}
+
+
+.podrobnosti::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.obrazek {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+/* ---------------------- */
+
+.podrobnosti {
+	display: none;
+}
+
+.zobrazit {
+	display: block;
+}

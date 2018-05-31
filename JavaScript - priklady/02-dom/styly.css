@@ -1,0 +1,29 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+	padding: 20px;
+	font: 16px/1.5 sans-serif ;
+}
+
+.tvary div {
+	display: inline-block;
+	margin: 30px;
+	width: 150px;
+	height: 150px;
+	border: 2px solid black;
+}
+
+.ctverec {
+	background-color: tomato;
+}
+
+.kolecko {
+	border-radius: 50%;
+	background-color: lime;
+}
+
+.kosoctverec {
+	background-color: dodgerblue;
+}

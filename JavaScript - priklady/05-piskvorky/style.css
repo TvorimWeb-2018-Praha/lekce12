@@ -1,0 +1,49 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+	margin: 0;
+	padding: 20px;
+	font: 18px/1.5 sans-serif;
+	background-color: white;
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", serif;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+
+#deska {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#deska td {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#deska td:hover {
+    background-color: #ffffdd;
+}
+
+.hraje {
+    margin: 30px 0;
+    font-size: 24px;
+}
+
+#natahu {
+    font-weight: bold;
+}
